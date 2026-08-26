@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Admin Panel – Aadi Tour &amp; Travel</title>
+<title>Admin Panel – Trip Plus Holidays</title>
 <meta name="robots" content="noindex,nofollow"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -186,8 +186,8 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
   <div class="login-card">
     <div class="login-logo">A</div>
     <h2>Admin Panel</h2>
-    <p>Aadi Tour &amp; Travel — Secure Access Only</p>
-    <div class="lf"><label>Email Address</label><input type="email" id="loginEmail" placeholder="admin@aaditourandtravel.com" onkeydown="if(event.key==='Enter')doLogin()"/></div>
+    <p>Trip Plus Holidays — Secure Access Only</p>
+    <div class="lf"><label>Email Address</label><input type="email" id="loginEmail" placeholder="admin@tripplusholidays.com" onkeydown="if(event.key==='Enter')doLogin()"/></div>
     <div class="lf"><label>Password</label><input type="password" id="loginPass" placeholder="••••••••" onkeydown="if(event.key==='Enter')doLogin()"/></div>
     <button class="login-btn" id="loginBtn" onclick="doLogin()"><i class="fas fa-sign-in-alt"></i> Sign In to Dashboard</button>
     <p class="login-err" id="loginErr"></p>
@@ -302,14 +302,14 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
     <div class="section-panel" id="sec-settings">
       <h3 style="font-size:17px;font-weight:700;margin-bottom:18px">Site Settings</h3>
       <div class="settings-card">
-        <div class="mf"><label>Business Name</label><input id="sBiz" value="Aadi Tour &amp; Travel"/></div>
+        <div class="mf"><label>Business Name</label><input id="sBiz" value="Trip Plus Holidays"/></div>
         <div class="mf-row">
           <div class="mf"><label>Primary Phone</label><input id="sP1" value="+91 9596368558"/></div>
           <div class="mf"><label>Secondary Phone</label><input id="sP2" value="+91 8700116855"/></div>
         </div>
-        <div class="mf"><label>Email</label><input id="sEmail" value="aaditourandtravel121@gmail.com"/></div>
+        <div class="mf"><label>Email</label><input id="sEmail" value="tripplusholidays@gmail.com"/></div>
         <div class="mf"><label>WhatsApp Number (digits only)</label><input id="sWA" value="919596368558"/></div>
-        <div class="mf"><label>Address</label><textarea id="sAddr" rows="2">NH44, Near Saffron Town, Lethipora, Pampore, J&K – 192122</textarea></div>
+        <div class="mf"><label>Address</label><textarea id="sAddr" rows="2">NH44, Letpora, Srinagar, J&K</textarea></div>
         <div class="mf-row">
           <div class="mf"><label>Facebook URL</label><input id="sFB" value="https://www.facebook.com/profile.php?id=61578478771649"/></div>
           <div class="mf"><label>Instagram URL</label><input id="sIG" value="https://www.instagram.com/aadi_travel_world"/></div>
@@ -749,7 +749,7 @@ function renderBookings(data){
     </select></td>
     <td><div class="action-btns">
       <button class="action-btn btn-view" onclick="viewRecord(${JSON.stringify(b).replace(/'/g,"\\'")})" title="View"><i class="fas fa-eye"></i></button>
-      <a class="action-btn btn-wa-a" href="https://wa.me/${(b.phone||'').replace(/[^0-9]/g,'')}?text=Hi%20${encodeURIComponent(b.name||'')}!%20Your%20Kashmir%20booking%20with%20Aadi%20Tour%20is%20confirmed." target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a class="action-btn btn-wa-a" href="https://wa.me/${(b.phone||'').replace(/[^0-9]/g,'')}?text=Hi%20${encodeURIComponent(b.name||'')}!%20Your%20Kashmir%20booking%20with%20Trip%20Plus%20Holidays%20is%20confirmed." target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       <button class="action-btn btn-del" onclick="delDoc('bookings','${b.id}',loadBookings)" title="Delete"><i class="fas fa-trash"></i></button>
     </div></td>
   </tr>`).join('');
@@ -784,7 +784,7 @@ function renderEnquiries(data){
       <option value="done" ${e.status==='done'?'selected':''}>Done</option>
     </select></td>
     <td><div class="action-btns">
-      <a class="action-btn btn-wa-a" href="https://wa.me/${(e.phone||'').replace(/[^0-9]/g,'')}?text=Hi%20${encodeURIComponent(e.name||'')}!%20Thanks%20for%20your%20enquiry%20at%20Aadi%20Tour%20%26%20Travel." target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a class="action-btn btn-wa-a" href="https://wa.me/${(e.phone||'').replace(/[^0-9]/g,'')}?text=Hi%20${encodeURIComponent(e.name||'')}!%20Thanks%20for%20your%20enquiry%20at%20Trip%20Plus%20Holidays." target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       <button class="action-btn btn-view" onclick="viewRecord(${JSON.stringify(e).replace(/'/g,"\\'")})" title="View"><i class="fas fa-eye"></i></button>
       <button class="action-btn btn-del" onclick="delDoc('enquiries','${e.id}',loadEnquiries)" title="Delete"><i class="fas fa-trash"></i></button>
     </div></td>

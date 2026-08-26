@@ -1,5 +1,5 @@
 // =============================================
-// AADI TOUR & TRAVEL — Firebase Config & Utils
+// TRIP PLUS HOLIDAYS — Firebase Config & Utils
 // =============================================
 
 // 🔥 REPLACE THESE WITH YOUR FIREBASE PROJECT DETAILS
@@ -131,7 +131,7 @@ export function renderFooter() {
     <div class="footer-top"><div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <a href="index.html" class="nav-logo"><span class="logo-a">A</span><span class="logo-text">adi Tour & Travel</span></a>
+          <a href="index.html" class="nav-logo"><span class="logo-a">T</span><span class="logo-text">rip Plus Holidays</span></a>
           <p>Your trusted partner for unforgettable Kashmir journeys. Licensed, verified & loved by travellers.</p>
           <a href="https://makemetop.in/?biz=41fdfe7OZyc2dCK8COnq" target="_blank" class="verified-badge"><i class="fas fa-certificate"></i> Verified on MakeMeTop</a>
           <div class="footer-socials">
@@ -167,14 +167,14 @@ export function renderFooter() {
           <ul>
             <li><i class="fas fa-phone-alt"></i><a href="tel:+919596368558">+91 9596368558</a></li>
             <li><i class="fas fa-phone-alt"></i><a href="tel:+918700116855">+91 8700116855</a></li>
-            <li><i class="fas fa-envelope"></i><a href="mailto:aaditourandtravel121@gmail.com">aaditourandtravel121@gmail.com</a></li>
-            <li><i class="fas fa-map-marker-alt"></i><span>NH44, Lethipora, Pampore, J&K – 192122</span></li>
+            <li><i class="fas fa-envelope"></i><a href="mailto:tripplusholidays@gmail.com">tripplusholidays@gmail.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i><span>NH44, Lethipora, Srinagar, J&K – 192122</span></li>
           </ul>
         </div>
       </div>
     </div></div>
     <div class="footer-bottom"><div class="container">
-      <p>© ${new Date().getFullYear()} Aadi Tour & Travel. All rights reserved.</p>
+      <p>© ${new Date().getFullYear()} Trip Plus Holidays. All rights reserved.</p>
       <p class="powered">Powered by <a href="https://makemetop.in" target="_blank">MakeMeTop</a></p>
     </div></div>
   </footer>`;
@@ -195,7 +195,7 @@ export function renderNav(active = '') {
   n.innerHTML = `
   <nav id="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo"><span class="logo-a">A</span><span class="logo-text">adi Tour & Travel</span></a>
+      <a href="index.html" class="nav-logo"><span class="logo-a">T</span><span class="logo-text">rip Plus Holidays</span></a>
       <ul class="nav-links" id="navLinks">
         ${pages.map(p => `<li><a href="${p.href}" class="nav-link${active===p.key?' active':''}">${p.label}</a></li>`).join('')}
         <li><a href="book-now.html" class="nav-btn-cta">Book Now</a></li>
@@ -207,13 +207,13 @@ export function renderNav(active = '') {
 
 // Shared loader HTML
 export function loaderHTML() {
-  return `<div id="loader"><div class="loader-inner"><div class="loader-logo"><span class="loader-a">A</span><span class="loader-text">adi Tour & Travel</span></div><div class="loader-bar"><div class="loader-fill"></div></div><p class="loader-tagline">Preparing your Kashmir journey…</p></div></div>`;
+  return `<div id="loader"><div class="loader-inner"><div class="loader-logo"><span class="loader-a">T</span><span class="loader-text">rip Plus Holidays</span></div><div class="loader-bar"><div class="loader-fill"></div></div><p class="loader-tagline">Preparing your Kashmir journey…</p></div></div>`;
 }
 
 // WA float + scroll top
 export function renderFloats() {
   document.body.insertAdjacentHTML('beforeend', `
-    <a href="https://wa.me/919596368558?text=Hi%20Aadi%20Tour%20%26%20Travel!%20I%20want%20to%20enquire%20about%20a%20tour." target="_blank" class="wa-float" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i><span class="wa-tooltip">Chat with us!</span></a>
+    <a href="https://wa.me/919596368558?text=Hi%20Trip%20Plus%20Holidays!%20I%20want%20to%20enquire%20about%20a%20tour." target="_blank" class="wa-float" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i><span class="wa-tooltip">Chat with us!</span></a>
     <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
     <div class="toast" id="globalToast"></div>
   `);
