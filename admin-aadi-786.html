@@ -316,7 +316,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
         </div>
         <div class="mf-row">
           <div class="mf"><label>YouTube URL</label><input id="sYT" value="https://youtube.com/@aaditourandtravel"/></div>
-          <div class="mf"><label>MakeMeTop Profile URL</label><input id="sMMT" value="https://makemetop.in/?biz=41fdfe7OZyc2dCK8COnq"/></div>
         </div>
         <button class="btn-gold" onclick="saveSettings()"><i class="fas fa-save"></i> Save Settings</button>
       </div>
@@ -845,7 +844,7 @@ window.viewRecord=function(record){
 
 // ── SETTINGS ─────────────────────────────────────────────
 window.saveSettings=async function(){
-  const data={bizName:v('sBiz'),phone1:v('sP1'),phone2:v('sP2'),email:v('sEmail'),whatsapp:v('sWA'),address:v('sAddr'),facebook:v('sFB'),instagram:v('sIG'),youtube:v('sYT'),makemetop:v('sMMT'),updatedAt:serverTimestamp()};
+  const data={bizName:v('sBiz'),phone1:v('sP1'),phone2:v('sP2'),email:v('sEmail'),whatsapp:v('sWA'),address:v('sAddr'),facebook:v('sFB'),instagram:v('sIG'),youtube:v('sYT'),updatedAt:serverTimestamp()};
   try{
     const snap=await getDocs(collection(db,'settings'));
     if(!snap.empty) await updateDoc(doc(db,'settings',snap.docs[0].id),data);

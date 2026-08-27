@@ -133,7 +133,7 @@ export function renderFooter() {
         <div class="footer-col">
           <a href="index.html" class="nav-logo"><span class="logo-a">T</span><span class="logo-text">rip Plus Holidays</span></a>
           <p>Your trusted partner for unforgettable Kashmir journeys. Licensed, verified & loved by travellers.</p>
-          <a href="https://makemetop.in/?biz=41fdfe7OZyc2dCK8COnq" target="_blank" class="verified-badge"><i class="fas fa-certificate"></i> Verified on MakeMeTop</a>
+          
           <div class="footer-socials">
             <a href="https://www.facebook.com/profile.php?id=61578478771649" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/aadi_travel_world" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -175,7 +175,7 @@ export function renderFooter() {
     </div></div>
     <div class="footer-bottom"><div class="container">
       <p>© ${new Date().getFullYear()} Trip Plus Holidays. All rights reserved.</p>
-      <p class="powered">Powered by <a href="https://makemetop.in" target="_blank">MakeMeTop</a></p>
+      <p class="powered">Developed by <a href="https://abrartallks-portfolio.co.in/" target="_blank">Abrarr Tallks</a></p>
     </div></div>
   </footer>`;
 }
